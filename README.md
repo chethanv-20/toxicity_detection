@@ -7,3 +7,4 @@
 - [Harshini](https://github.com/harshinimurugan2004)
 
 ### This project is still under development process - check repo after some time 
+### Phase 1 of our project ends on 10-05-2024
