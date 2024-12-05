@@ -110,13 +110,13 @@ def predict_euphemism(euphemism):
 
 
 # Load the tokenizer, label encoder, and model for inference
-tokenizer_path = "C:/Users/DELL/OneDrive/Desktop/capstone/new pickle files/tokenizer.pkl"
-label_encoder_path = "C:/Users/DELL/OneDrive/Desktop/capstone/new pickle files/label_encoder.pkl"
+tokenizer_path = "/tokenizer.pkl"
+label_encoder_path = "/label_encoder.pkl"
 tokenizer = joblib.load(tokenizer_path)
 label_encoder = joblib.load(label_encoder_path)
 
 # Reload the model with the correct architecture
-model_path_pth = 'C:/Users/DELL/OneDrive/Desktop/capstone/new pickle files/euphemism_detector.pth'
+model_path_pth = '/euphemism_detector.pth'
 model = EuphemismDetector(vocab_size, embed_size, hidden_size, num_classes)
 model.load_state_dict(torch.load(model_path_pth))
 model.eval()
